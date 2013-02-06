@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ios_nblue_sample_term/!svn/ver/11/branches/CleanupForRelease/libtester/sampleclient
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ios_nblue_sample_term/!svn/ver/6/branches/CleanupForRelease/libtester/sampleclient/main.m
+END
+AppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ios_nblue_sample_term/!svn/ver/10/branches/CleanupForRelease/libtester/sampleclient/AppDelegate.h
+END
+GenericDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ios_nblue_sample_term/!svn/ver/12/branches/CleanupForRelease/libtester/sampleclient/GenericDevice.h
+END
+ScanController.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ios_nblue_sample_term/!svn/ver/11/branches/CleanupForRelease/libtester/sampleclient/ScanController.m
+END
+sampleclient-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ios_nblue_sample_term/!svn/ver/6/branches/CleanupForRelease/libtester/sampleclient/sampleclient-Info.plist
+END
+MainStoryboard.storyboard
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ios_nblue_sample_term/!svn/ver/11/branches/CleanupForRelease/libtester/sampleclient/MainStoryboard.storyboard
+END
+sampleclient-Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ios_nblue_sample_term/!svn/ver/6/branches/CleanupForRelease/libtester/sampleclient/sampleclient-Prefix.pch
+END
+AppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ios_nblue_sample_term/!svn/ver/10/branches/CleanupForRelease/libtester/sampleclient/AppDelegate.m
+END
+GenericDevice.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ios_nblue_sample_term/!svn/ver/12/branches/CleanupForRelease/libtester/sampleclient/GenericDevice.m
+END
+ConnectionController.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ios_nblue_sample_term/!svn/ver/11/branches/CleanupForRelease/libtester/sampleclient/ConnectionController.h
+END
+ConnectionController.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ios_nblue_sample_term/!svn/ver/11/branches/CleanupForRelease/libtester/sampleclient/ConnectionController.m
+END
+ScanController.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ios_nblue_sample_term/!svn/ver/11/branches/CleanupForRelease/libtester/sampleclient/ScanController.h
+END

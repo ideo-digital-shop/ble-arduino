@@ -1,0 +1,12 @@
+{
+  "name": "btp-server",
+  "version": "0.0.1",
+  "dependencies" : {
+    "now"     :  ">=0.7",
+    "express" :  ">=2.4"
+  },
+  "engines": {
+    "node": ">=0.4",
+    "npm":"1.1.4"  
+}
+}

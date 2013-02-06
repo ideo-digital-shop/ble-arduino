@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['brdevice',['BRDevice',['../interface_b_r_device.html',1,'']]],
+  ['brdevicedelegate_2dp',['BRDeviceDelegate-p',['../protocol_b_r_device_delegate-p.html',1,'']]],
+  ['brgaragedoor',['BRGarageDoor',['../interface_b_r_garage_door.html',1,'']]],
+  ['brgaragedoordelegate_2dp',['BRGarageDoorDelegate-p',['../protocol_b_r_garage_door_delegate-p.html',1,'']]],
+  ['brswitch',['BRSwitch',['../interface_b_r_switch.html',1,'']]],
+  ['brswitchdelegate_2dp',['BRSwitchDelegate-p',['../protocol_b_r_switch_delegate-p.html',1,'']]]
+];

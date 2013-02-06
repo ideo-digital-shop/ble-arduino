@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <title>Steer the Car!</title>
+            
+            <link href="/css/steerLayout.css" rel="stylesheet" type="text/css">
+                <!--<script language="javascript" type="text/javascript" src="jquery.js"></script> -->
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+                <script type="text/javascript" src="NativeBridge.js"></script>
+                <script src="/nowjs/now.js"></script>
+                
+                <script>
+                    $(document).ready(function(){
+                                      
+                                      $("#leftvotes").val(0);
+                                      $("#rightvotes").val(0);
+                                      $("#govotes").val(0);
+                                      //$("#stopvotes").val(0);
+                                      
+                                      
+                                      now.receiveMessage = function(synchstring)
+                                      {
+                                      //Input comes in as <left>,<right>,<go>,<stop>
+                                      console.log("Server response: " + synchstring);
+                                      var controls = synchstring.split(",");
+                                      $("#leftvotes").val(""+controls[0]);
+                                      $("#rightvotes").val(""+controls[1]);
+                                      $("#govotes").val(""+controls[2]);
+                                      //$("#stopvotes").val(""+controls[3]);
+                                      
+                                      sendToCar();
+                                      }
+                                      });
+                    </script>
+                
+                </head>
+    
+    <body>
+        <div id="plotTitle"> 
+            <h2> Steer the Car! </h2>
+            <br/> <br/>
+        </div>
+        
+        <div id="rightbutton" onMouseDown="registerInput('right', 1)" 	onTouchStart="registerInput('right', 1)" onMouseUp="registerInput('right', 0)" onTouchEnd="registerInput('right', 0)" > 
+            RIGHT <br>
+            <input type="text" id="rightvotes" size="3" disabled="true"/> <br>
+        </div>
+        <div id="leftbutton" onMouseDown="registerInput('left', 1)"		onTouchStart="registerInput('left', 1)"  onMouseUp="registerInput('left', 0)"  onTouchEnd="registerInput('left', 0)" > 
+            LEFT <br>
+            <input type="text" id="leftvotes" size="3" disabled="true"/> <br>
+        </div>
+        
+        <div id="gobutton" onMouseDown="registerInput('go', 1)" 		onTouchStart="registerInput('go', 1)"    onMouseUp="registerInput('go', 0)"    onTouchEnd="registerInput('go', 0)" > 
+            GO <br>
+            <input type="text" id="govotes" size="3" disabled="true"/> <br>
+        </div>
+        
+        
+        
+        
+        <script type="text/javascript">
+            
+            function registerInput(buttonID, pressed)
+            {
+                var direction = buttonID;
+                
+                //By convention, if the person isn't voting to go, he is voting to stop
+                //if(direction =="go" && !pressed)
+                //	direction = "stop";
+                
+                //Send to the server
+                now.distributeMessage(direction + "-" + pressed);
+                
+               	sendToCar();
+            }
+            
+            
+            function sendToCar()
+            {
+                
+                if (typeof NativeBridge === 'undefined') {
+                    //Then we are running the web client
+                    return;
+                }
+                
+                //Inputs:
+                var leftvotes = $("#leftvotes").val(),
+                rightvotes = $("#rightvotes").val(),
+                govotes = $("#govotes").val();
+                
+                
+                //Outputs: steerbit, steerval, speedval
+                //Steerbit:
+                //0: Right
+                //1: Left
+                //2: Straight
+                var steer_bit = 2, //Straight by default
+                steer_val = 4, //Pick a moderate turn radius
+                speed_val = 0; //Stopped by default
+                
+                //Read the inputs to see where/how the car goes
+                //Logic: if one of the number is non zero, pick the larger one 
+                if( leftvotes > 0 || rightvotes >0)
+                {
+                    if(leftvotes>rightvotes)
+                    steer_bit = 1;
+                    else if(rightvotes>leftvotes)
+                    steer_bit = 0;
+                    else	//If a tie, go straight!
+                    steer_bit = 2;	
+                }
+                
+                if(govotes > 0)
+                if (govotes > stopvotes)
+                speedval = 5;
+                
+                //console.log("Speed val: " + speed_val + ", Steer Val: " + steer_val);
+                
+                var output_string = "(" + steer_bit + steer_val + speed_val + ")\r" 
+                
+                //console.log("Output: " + output_string);
+                
+                
+                NativeBridge.call("steerCar", [output_string], function (number) {
+                                  });
+            }
+            </script>
+        
+        
+        
+    </body>
+</html>

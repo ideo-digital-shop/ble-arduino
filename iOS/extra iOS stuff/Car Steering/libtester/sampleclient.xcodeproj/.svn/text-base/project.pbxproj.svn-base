@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE3FA7FA1513EA120035F986 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE3FA7F91513EA120035F986 /* Default@2x.png */; };
+		DE6953351518008F00ED436E /* GenericDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6953341518008F00ED436E /* GenericDevice.m */; };
+		DE6953391518032C00ED436E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6953381518032C00ED436E /* main.m */; };
+		DE6953401518036700ED436E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE69533B1518036700ED436E /* AppDelegate.m */; };
+		DE6953411518036700ED436E /* ConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE69533D1518036700ED436E /* ConnectionController.m */; };
+		DE6953421518036700ED436E /* ScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE69533F1518036700ED436E /* ScanController.m */; };
+		DE6953461518037F00ED436E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6953431518037F00ED436E /* MainStoryboard.storyboard */; };
+		DED1A24814FFE28C002966CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED1A24714FFE28C002966CD /* UIKit.framework */; };
+		DED1A24A14FFE28C002966CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED1A24914FFE28C002966CD /* Foundation.framework */; };
+		DED1A24C14FFE28C002966CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED1A24B14FFE28C002966CD /* CoreGraphics.framework */; };
+		DED1A26114FFE2DA002966CD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DED1A25E14FFE2DA002966CD /* icon.png */; };
+		DED1A26F14FFE48F002966CD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED1A26E14FFE48F002966CD /* CoreBluetooth.framework */; };
+		FC6AE86C1565A21400936DED /* CarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6AE86B1565A21400936DED /* CarController.m */; };
+		FC9E2D011565B3B600F46AD3 /* SteeringSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2D001565B3B600F46AD3 /* SteeringSlider.m */; };
+		FC9E2D041565B3C800F46AD3 /* SpeedSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9E2D031565B3C800F46AD3 /* SpeedSlider.m */; };
+		FC9E2D061565B4EF00F46AD3 /* pattern1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC9E2D051565B4EF00F46AD3 /* pattern1.jpg */; };
+		FCE1A2211565A951001FB1F7 /* libnBlue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE1A2201565A951001FB1F7 /* libnBlue.a */; };
+		FCE1A2251565AF4F001FB1F7 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE1A2241565AF4F001FB1F7 /* stopButton.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE3FA7F91513EA120035F986 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DE6953331518008F00ED436E /* GenericDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericDevice.h; sourceTree = "<group>"; };
+		DE6953341518008F00ED436E /* GenericDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericDevice.m; sourceTree = "<group>"; };
+		DE6953381518032C00ED436E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE69533A1518036700ED436E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE69533B1518036700ED436E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE69533C1518036700ED436E /* ConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionController.h; sourceTree = "<group>"; };
+		DE69533D1518036700ED436E /* ConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionController.m; sourceTree = "<group>"; };
+		DE69533E1518036700ED436E /* ScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanController.h; sourceTree = "<group>"; };
+		DE69533F1518036700ED436E /* ScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanController.m; sourceTree = "<group>"; };
+		DE6953431518037F00ED436E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DE6953441518037F00ED436E /* sampleclient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "sampleclient-Info.plist"; sourceTree = "<group>"; };
+		DE6953451518037F00ED436E /* sampleclient-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sampleclient-Prefix.pch"; sourceTree = "<group>"; };
+		DE6953481518046800ED436E /* BRDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDevice.h; sourceTree = "<group>"; };
+		DE6953491518046800ED436E /* nBlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nBlue.h; sourceTree = "<group>"; };
+		DED1A24314FFE28C002966CD /* Sample Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED1A24714FFE28C002966CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DED1A24914FFE28C002966CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DED1A24B14FFE28C002966CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DED1A25E14FFE2DA002966CD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DED1A26E14FFE48F002966CD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FC6AE86A1565A21400936DED /* CarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarController.h; sourceTree = "<group>"; };
+		FC6AE86B1565A21400936DED /* CarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarController.m; sourceTree = "<group>"; };
+		FC9E2CFF1565B3B600F46AD3 /* SteeringSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringSlider.h; sourceTree = "<group>"; };
+		FC9E2D001565B3B600F46AD3 /* SteeringSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteeringSlider.m; sourceTree = "<group>"; };
+		FC9E2D021565B3C800F46AD3 /* SpeedSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedSlider.h; sourceTree = "<group>"; };
+		FC9E2D031565B3C800F46AD3 /* SpeedSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedSlider.m; sourceTree = "<group>"; };
+		FC9E2D051565B4EF00F46AD3 /* pattern1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern1.jpg; sourceTree = "<group>"; };
+		FCE1A2201565A951001FB1F7 /* libnBlue.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnBlue.a; sourceTree = "<group>"; };
+		FCE1A2221565ADAA001FB1F7 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		FCE1A2241565AF4F001FB1F7 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DED1A24014FFE28C002966CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED1A26F14FFE48F002966CD /* CoreBluetooth.framework in Frameworks */,
+				DED1A24814FFE28C002966CD /* UIKit.framework in Frameworks */,
+				DED1A24A14FFE28C002966CD /* Foundation.framework in Frameworks */,
+				DED1A24C14FFE28C002966CD /* CoreGraphics.framework in Frameworks */,
+				FCE1A2211565A951001FB1F7 /* libnBlue.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE8EB5131517ED4A00529C7C /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				DE6953431518037F00ED436E /* MainStoryboard.storyboard */,
+				DE6953441518037F00ED436E /* sampleclient-Info.plist */,
+				DE6953451518037F00ED436E /* sampleclient-Prefix.pch */,
+				DE6953381518032C00ED436E /* main.m */,
+			);
+			name = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		DED1A23814FFE28C002966CD = {
+			isa = PBXGroup;
+			children = (
+				FCE1A2201565A951001FB1F7 /* libnBlue.a */,
+				DE6953481518046800ED436E /* BRDevice.h */,
+				DE6953491518046800ED436E /* nBlue.h */,
+				DED1A25E14FFE2DA002966CD /* icon.png */,
+				DE3FA7F91513EA120035F986 /* Default@2x.png */,
+				DED1A24D14FFE28C002966CD /* sampleclient */,
+				DED1A24614FFE28C002966CD /* Frameworks */,
+				DED1A24414FFE28C002966CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DED1A24414FFE28C002966CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DED1A24314FFE28C002966CD /* Sample Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DED1A24614FFE28C002966CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DED1A26E14FFE48F002966CD /* CoreBluetooth.framework */,
+				DED1A24714FFE28C002966CD /* UIKit.framework */,
+				DED1A24914FFE28C002966CD /* Foundation.framework */,
+				DED1A24B14FFE28C002966CD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED1A24D14FFE28C002966CD /* sampleclient */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1A2221565ADAA001FB1F7 /* util.h */,
+				DE69533A1518036700ED436E /* AppDelegate.h */,
+				DE69533B1518036700ED436E /* AppDelegate.m */,
+				DE69533C1518036700ED436E /* ConnectionController.h */,
+				DE69533D1518036700ED436E /* ConnectionController.m */,
+				DE69533E1518036700ED436E /* ScanController.h */,
+				DE69533F1518036700ED436E /* ScanController.m */,
+				DE6953331518008F00ED436E /* GenericDevice.h */,
+				DE6953341518008F00ED436E /* GenericDevice.m */,
+				FC6AE86A1565A21400936DED /* CarController.h */,
+				FC6AE86B1565A21400936DED /* CarController.m */,
+				FC9E2CFF1565B3B600F46AD3 /* SteeringSlider.h */,
+				FC9E2D001565B3B600F46AD3 /* SteeringSlider.m */,
+				FC9E2D021565B3C800F46AD3 /* SpeedSlider.h */,
+				FC9E2D031565B3C800F46AD3 /* SpeedSlider.m */,
+				FCE1A2231565AF35001FB1F7 /* resources */,
+				DE8EB5131517ED4A00529C7C /* Supporting FIles */,
+			);
+			path = sampleclient;
+			sourceTree = "<group>";
+		};
+		FCE1A2231565AF35001FB1F7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC9E2D051565B4EF00F46AD3 /* pattern1.jpg */,
+				FCE1A2241565AF4F001FB1F7 /* stopButton.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DED1A24214FFE28C002966CD /* Sample Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED1A25B14FFE28C002966CD /* Build configuration list for PBXNativeTarget "Sample Client" */;
+			buildPhases = (
+				DED1A23F14FFE28C002966CD /* Sources */,
+				DED1A24014FFE28C002966CD /* Frameworks */,
+				DED1A24114FFE28C002966CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample Client";
+			productName = sampleclient;
+			productReference = DED1A24314FFE28C002966CD /* Sample Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED1A23A14FFE28C002966CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DED1A23D14FFE28C002966CD /* Build configuration list for PBXProject "sampleclient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DED1A23814FFE28C002966CD;
+			productRefGroup = DED1A24414FFE28C002966CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED1A24214FFE28C002966CD /* Sample Client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED1A24114FFE28C002966CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED1A26114FFE2DA002966CD /* icon.png in Resources */,
+				DE3FA7FA1513EA120035F986 /* Default@2x.png in Resources */,
+				DE6953461518037F00ED436E /* MainStoryboard.storyboard in Resources */,
+				FCE1A2251565AF4F001FB1F7 /* stopButton.png in Resources */,
+				FC9E2D061565B4EF00F46AD3 /* pattern1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DED1A23F14FFE28C002966CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6953351518008F00ED436E /* GenericDevice.m in Sources */,
+				DE6953391518032C00ED436E /* main.m in Sources */,
+				DE6953401518036700ED436E /* AppDelegate.m in Sources */,
+				DE6953411518036700ED436E /* ConnectionController.m in Sources */,
+				DE6953421518036700ED436E /* ScanController.m in Sources */,
+				FC6AE86C1565A21400936DED /* CarController.m in Sources */,
+				FC9E2D011565B3B600F46AD3 /* SteeringSlider.m in Sources */,
+				FC9E2D041565B3C800F46AD3 /* SpeedSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DED1A25914FFE28C002966CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DED1A25A14FFE28C002966CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED1A25C14FFE28C002966CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2.0.0.0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sampleclient/sampleclient-Prefix.pch";
+				INFOPLIST_FILE = "sampleclient/sampleclient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DED1A25D14FFE28C002966CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 2.0.0.0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sampleclient/sampleclient-Prefix.pch";
+				INFOPLIST_FILE = "sampleclient/sampleclient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DED1A23D14FFE28C002966CD /* Build configuration list for PBXProject "sampleclient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED1A25914FFE28C002966CD /* Debug */,
+				DED1A25A14FFE28C002966CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED1A25B14FFE28C002966CD /* Build configuration list for PBXNativeTarget "Sample Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED1A25C14FFE28C002966CD /* Debug */,
+				DED1A25D14FFE28C002966CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED1A23A14FFE28C002966CD /* Project object */;
+}

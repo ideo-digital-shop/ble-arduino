@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="chw-46-jAo">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+    </dependencies>
+    <scenes>
+        <!--Scan Controller - Select Device-->
+        <scene sceneID="IfQ-sd-xu9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8G-bR-zgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hDM-Al-XXx" customClass="ScanController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7o-wp-2MY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kd5-hv-IOF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="355"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Reuse Identifier" id="Czi-yq-CF3">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="6Co-CY-QOi" kind="push" identifier="cellSegue" id="96p-O4-0cc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hDM-Al-XXx" id="ZMe-u1-iMV"/>
+                                    <outlet property="delegate" destination="hDM-Al-XXx" id="E2h-qb-9lG"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NdL-GX-MJW">
+                                <rect key="frame" x="20" y="368" width="120" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BLEScanButton:" destination="hDM-Al-XXx" eventType="touchUpInside" id="sJz-Nw-wOX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dUj-0w-c6F">
+                                <rect key="frame" x="180" y="368" width="120" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stop Scan">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BLEStopScanButton:" destination="hDM-Al-XXx" eventType="touchUpInside" id="ugC-p7-aYu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Device" id="3Jc-oH-x5M"/>
+                    <connections>
+                        <outlet property="_scanButton" destination="NdL-GX-MJW" id="1AQ-Ik-LGI"/>
+                        <outlet property="deviceTableView" destination="kd5-hv-IOF" id="kPP-Uv-eFo"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="498" y="-143"/>
+        </scene>
+        <!--Connection Controller-->
+        <scene sceneID="sXX-xB-gIc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyI-Bn-xs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6Co-CY-QOi" customClass="ConnectionController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwo-2B-OZu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wSM-os-qgg">
+                                <rect key="frame" x="5" y="373" width="94" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send 10">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="send100Button:" destination="6Co-CY-QOi" eventType="touchUpInside" id="ozb-zg-VB7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ecM-M5-w4n">
+                                <rect key="frame" x="113" y="373" width="94" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get Settings">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSettings:" destination="6Co-CY-QOi" eventType="touchUpInside" id="ul8-L4-zrT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aFR-Y1-mEH">
+                                <rect key="frame" x="221" y="373" width="94" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Mode 1">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeMode:" destination="iyI-Bn-xs0" eventType="touchUpInside" id="dGp-71-7ip"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" id="cGV-n4-9ji" userLabel="textView">
+                                <rect key="frame" x="5" y="5" width="310" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6Co-CY-QOi" id="HUH-im-eDb"/>
+                                </connections>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2QZ-2q-lkp" userLabel="inputText">
+                                <rect key="frame" x="5" y="336" width="310" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="uLf-vX-Maj"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="buttonChangeMode" destination="aFR-Y1-mEH" id="Kcb-qK-WBn"/>
+                        <outlet property="buttonGetSettings" destination="ecM-M5-w4n" id="V6s-Cg-nxq"/>
+                        <outlet property="buttonSend100" destination="wSM-os-qgg" id="Ep2-GL-BSq"/>
+                        <outlet property="inputText" destination="2QZ-2q-lkp" id="g8Y-vg-aNg"/>
+                        <outlet property="textView" destination="cGV-n4-9ji" id="7k2-1Y-0W7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="938" y="-143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iv5-3O-T2y">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7B-fr-BOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="chw-46-jAo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="s8h-iY-QXM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hDM-Al-XXx" kind="relationship" relationship="rootViewController" id="rCK-kI-det"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="33" y="-143"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ConnectionController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConnectionController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeMode:"/>
+                <relationship kind="action" name="getSettings:"/>
+                <relationship kind="action" name="send100Button:"/>
+                <relationship kind="outlet" name="buttonChangeMode" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonGetSettings" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="buttonSend100" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="inputText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ScanController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScanController.h"/>
+            <relationships>
+                <relationship kind="action" name="BLEScanButton:"/>
+                <relationship kind="action" name="BLEStopScanButton:"/>
+                <relationship kind="outlet" name="_scanButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="deviceTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
