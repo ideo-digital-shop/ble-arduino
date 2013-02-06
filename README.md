@@ -171,8 +171,6 @@ function
 ##Online resources
 
 * [nBlue forum](http://www.blueradios.com/forum/)
-username: jchion
-pass: BLE1234
 
 * nBlue AT.s Command Set
 see forum above
@@ -181,6 +179,6 @@ see forum above
 
 * [SoftwareSerial](http://arduino.cc/hu/Reference/SoftwareSerial)
 
-* [a look at Apple's CoreBluetooth](developer.apple.com/library/ios/#samplecode/TemperatureSensor/Introduction/Intro.html)
+* [a look at Apple's CoreBluetooth](http://developer.apple.com/library/ios/#samplecode/TemperatureSensor/Introduction/Intro.html)
 
 
