@@ -1,6 +1,8 @@
 #Bluetooth Low-Energy Arduino Shield
 *with the nBlue BLE Module, written by Jimmy Chion, IDEO*
 
+license: [Creative Commons SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
+
 ##Quick Start
 
 On Arduino side:
@@ -25,9 +27,9 @@ Bluetooth 4.0 is a great way to get information in and out of the iPhone 4s, iPa
 
 This documentation probably has a missing sections. Please direct ANY AND ALL questions to
 
-* [Jimmy Chion](jchion@ideo.com) - firmware design
-* [Kyle Doerksen](kdoerksen@ideo.com) - hardware design
-* [Dan Goodwin](dg@ideo.com) - iOS layer (no longer with IDEO)
+* Jimmy Chion(jchion@ideo.com) - firmware design
+* Kyle Doerksen(kdoerksen@ideo.com) - hardware design
+* Dan Goodwin(dg@ideo.com) - iOS layer (no longer with IDEO)
 
 The product has since evolved from [IDEO Labs post](http://labs.ideo.com/2012/07/02/bluetooth-4-0-as-a-prototyping-tool/)
 
