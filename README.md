@@ -25,9 +25,9 @@ Bluetooth 4.0 is a great way to get information in and out of the iPhone 4s, iPa
 
 This documentation probably has a missing sections. Please direct ANY AND ALL questions to
 
-* [Jimmy Chion](jchion@ideo.com) - firmware design
-* [Kyle Doerksen](kdoerksen@ideo.com) - hardware design
-* [Dan Goodwin](dg@ideo.com) - iOS layer (no longer with IDEO)
+* Jimmy Chion <jchion@ideo.com> - firmware design
+* Kyle Doerksen <kdoerksen@ideo.com> - hardware design
+* Dan Goodwin <dg@ideo.com> - iOS layer (no longer with IDEO)
 
 The product has since evolved from [IDEO Labs post](http://labs.ideo.com/2012/07/02/bluetooth-4-0-as-a-prototyping-tool/)
 
@@ -138,7 +138,7 @@ More specific information and comments inside each Arduino sketch.
 here's what Dan wrote:
 
 For software questions (and I expect there to be a lot of them), 
-ping [Dan](dg@ideo.com). 
+ping Dan <dg@ideo.com>. 
 
 Highlights of contents of iOS > our modified iPhone app:
 
