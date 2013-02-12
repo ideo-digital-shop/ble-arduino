@@ -1,0 +1,17 @@
+BLEcontroller	KEYWORD1
+init	KEYWORD2
+setVerbose	KEYWORD2
+run	KEYWORD2
+startAdvertising	KEYWORD2
+isAdvertising	KEYWORD2
+initConnection	KEYWORD2
+isConnected	KEYWORD2
+isInDataMode	KEYWORD2
+disconnect	KEYWORD2
+send	KEYWORD2
+unpair	KEYWORD2
+reset	KEYWORD2
+getName	KEYWORD2
+getAddressOfModule	KEYWORD2
+getSignalStrength	KEYWORD2
+getConnectionStatus	KEYWORD2
